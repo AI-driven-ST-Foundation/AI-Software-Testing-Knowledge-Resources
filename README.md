@@ -1,64 +1,171 @@
-# AI-Software-Testing-Knowledge-Resources
-Collection of resources for AI-driven software testing and automation, including research, articles, tools, and case studies to enhance testing efficiency and innovation.
+# AI-Powered Software Testing Tools and Research
 
+This repository curates the best AI tools for mobile and web app automation testing alongside seminal and recent research on AI-driven software testing. It covers open-source frameworks and commercial platforms that leverage AI (machine learning, computer vision, NLP) to improve test creation, execution, and maintenance. Key topics include AI-powered test case generation, visual UI testing, self-healing automation, defect prediction, and CI/CD integration.
+
+---
+
+## Table of Contents
+
+1. [AI Tools for Software Testing](#ai-tools-for-software-testing)
+   - [Open-Source Tools](#open-source-tools)
+   - [Commercial Platforms](#commercial-platforms)
+2. [AI Models and Libraries](#ai-models-and-libraries)
+3. [Research Papers](#research-papers)
+   - [Test Case Generation](#test-case-generation)
+   - [Visual Testing and GUI Automation](#visual-testing-and-gui-automation)
+   - [Self-Healing Test Automation](#self-healing-test-automation)
+   - [Defect Prediction and Analytics](#defect-prediction-and-analytics)
+   - [AI in CI/CD](#ai-in-cicd)
+   - [Additional Research Papers](#additional-research-papers)
+4. [Blog Posts](#blog-posts)
+5. [Contributions](#contributions)
+
+---
+
+## AI Tools for Software Testing
+
+### Open-Source Tools
+- **Microsoft OmniParser**  
+  An AI tool for visual UI parsing and automation that detects interactive elements from screenshots.  
+  [GitHub: microsoft/OmniParser](https://github.com/microsoft/OmniParser)
+
+- **askUI VisionAgent**  
+  An automation agent that "sees" the UI to perform operations based on plain English or Python API commands.  
+  [GitHub: askui/vision-agent](https://github.com/askui/vision-agent)
+
+- **Healenium**  
+  A self-healing test automation library for Selenium that uses ML to dynamically update broken locators.  
+  [Healenium Documentation](https://solutionshub.epam.com)
+
+- **EvoSuite**  
+  Automatically generates JUnit test suites for Java classes using genetic algorithms to achieve high code coverage.  
+  [EvoSuite Website](https://cse.unr.edu)
+
+- **SikuliX**  
+  A GUI automation tool based on image recognition. Though it uses basic computer vision, it laid the groundwork for modern visual testing.  
+  [SikuliX](http://sikulix.com)
+
+- **Others:**  
+  - **Robot Framework** with AI libraries  
+  - **Appium** integrated with image recognition plugins  
+  - Emerging projects like **TestGPT** for generating test cases from requirements
+
+### Commercial Platforms
+- **Applitools Eyes**  
+  Uses proprietary visual AI to detect UI regressions intelligently by comparing screenshots beyond pixel-level differences.  
+  [Applitools Eyes](https://applitools.com)
+
+- **Functionize**  
+  Converts plain English test steps into executable scripts using ML and NLP, with self-healing capabilities when the UI changes.  
+  [Functionize](https://functionize.com)
+
+- **Mabl**  
+  A cloud-based service that auto-generates tests by crawling your web application, applying ML for self-healing and maintenance.  
+  [Mabl](https://mabl.com)
+
+- **Testim (Harness)**  
+  Employs dynamic weighted locators and natural language-based test creation to maintain test stability despite UI changes.  
+  [Testim on Harness](https://harness.io)
+
+- **testRigor**  
+  Enables writing tests in plain English and leverages GPT-4 for automated test script generation and maintenance across platforms.  
+  [testRigor](https://testrigor.com)
+
+- **AccelQ**  
+  A no-code platform that uses generative AI for creating test scenarios and self-healing automation for web, API, and mainframe testing.  
+  [AccelQ](https://accelq.com)
+
+- **Rainforest QA**  
+  Combines AI with crowd-testing to convert plain English tests into automated steps, with fallback human verification if needed.  
+  [Rainforest QA](https://rainforestqa.com)
+
+- **Other Platforms:**  
+  - **OpenText UFT One** with AI-based visual recognition  
+  - **Autify**, **Reflect**, **Meticulous**, **ProdPerfect**, **Tricentis Tosca (Vision AI)**, etc.
+
+---
+
+## AI Models and Libraries
+
+- **YOLOv5 & YOLOv8**  
+  State-of-the-art object detection models used for identifying UI elements in screenshots in real time.  
+  [YOLOv5](https://github.com/ultralytics/yolov5) | [YOLOv8](https://github.com/ultralytics/yolov8)
+
+- **OpenAI GPT-4**  
+  Leverages natural language processing to generate test cases, write unit tests, and analyze logs.  
+  [OpenAI API](https://openai.com/api)
+
+- **Vision AI Libraries**  
+  Tools such as OCR (Tesseract, Azure OCR) and template matching algorithms for robust visual UI element recognition.
+
+- **Reinforcement Learning Agents**  
+  Agents that explore GUIs and learn optimal testing strategies, enhancing exploratory test automation.
+
+- **Code Analysis Models**  
+  Models like code2vec, Graph Neural Networks, and transformer-based models (e.g., Codex) assist in generating tests and predicting defects.
+
+---
 
 ## Research Papers
 
-1. **[Implementation and Comparison of Artificial Intelligence Techniques in Software Testing](https://ieeexplore.ieee.org/document/10112041)**
+### Test Case Generation
+- **EvoSuite: Automatic Test Suite Generation for Object-Oriented Software (Fraser & Arcuri, 2011)**  
+  Pioneering work on generating JUnit tests using genetic algorithms.  
+  [Read more](https://cse.unr.edu)
 
-Published in: 2023 6th International Conference on Information Systems and Computer Networks (ISCON)
+- **The Future of Software Testing: AI-Powered Test Case Generation and Validation (Baqar & Khanda, 2024)**  
+  A survey of AI techniques for automatic test creation and maintenance.  
+  [arXiv](https://arxiv.org)
 
-Summary: This paper discusses how AI, specifically machine learning (ML) and deep learning (DL), improves software testing efficiency by reducing manual efforts. It compares techniques used for faster application testing. The paper suggests that AI enhances test efficiency, especially for complex, time-sensitive applications.
+- **Reinforcement Learning for Test Case Prioritization (Spieker et al., 2017)**  
+  Uses RL to dynamically order and generate tests in a CI environment.  
+  [More info](http://hspeiker.de)
 
-2. **[Artificial Intelligence in Software Test Automation: A Systematic Literature Review](https://www.scitepress.org/Link.aspx?doi=10.5220/0009417801810192)**
+- **ChatGPT and Test Generation (2023)**  
+  Early explorations on leveraging large language models to generate test scenarios and unit tests.
 
-Published in: No specific journal listed, part of a systematic review study
+### Visual Testing and GUI Automation
+- **Vision-Based Mobile App GUI Testing: A Survey (Wang et al., 2023)**  
+  Reviews image-based techniques using CNNs and OCR for mobile UI testing.  
+  [arXiv](https://arxiv.org)
 
-Summary: This paper categorizes AI techniques applicable to various testing activities, including test case reusability, coverage, fault detection, and manual effort reduction. The paper discusses that AI-based methods improve efficiency in test automation, enhance fault detection, and enable wider test coverage.
+- **GUI Element Detection from Mobile UI Images Using YOLOv5 (Altinbas & Serif, 2022)**  
+  Demonstrates accurate detection of UI components using YOLOv5.  
+  [arXiv](https://arxiv.org)
 
-3. **[Accelerating Software Quality: Generative AI for Automated Test-Case Generation](https://ieeexplore.ieee.org/document/10112041)**
+- **Intelligent System for Visual Testing of Software Products (2021)**  
+  Explores neural network approaches to enhance visual regression detection.
 
-Published in: International Journal for Research in Applied Science and Engineering Technology
+- **Visual GUI Testing in Practice: Challenges and Benefits (Alégroth et al., 2018)**  
+  An empirical study on the advantages and challenges of visual testing in continuous integration.
 
-Summary: The study explores generative AI for creating comprehensive test cases automatically and detecting bugs by analyzing codebases and execution traces. The paper suggests that generative AI significantly improves test coverage and efficiency but requires solutions for challenges like data quality and domain specificity.
+### Self-Healing Test Automation
+- **Self-Healing Test Automation Frameworks Using Reinforcement Learning (Dey et al., 2022)**  
+  Proposes an RL-based approach for dynamically repairing test scripts.  
+  [Online Scientific Research](https://onlinescientificresearch.com)
 
-4. **[AI Techniques in Software Engineering Paradigm](https://www.ijraset.com/best-journal/accelerating-software-quality-unleashing-the-power-of-generative-ai-for-automated-test-case-generation-and-bug-identification)**
+- **Multi-Year Grey Literature Review on AI-assisted Test Automation (Corradini et al., 2024)**  
+  Surveys industry trends and implementations of self-healing in test automation.  
+  [arXiv](https://arxiv.org)
 
-Published in: Proceedings of the 2018 ACM/SPEC International Conference on Performance Engineering
+- **Self-Healing Test Automation using AI and ML (2021)**  
+  A case study demonstrating the effective use of ML to update test selectors automatically.
 
-Summary: This paper discusses AI's role in automating the development, operation, and analysis phases of software engineering, including defect prediction and log analysis. The paper suggests that AI enhances defect prediction, enables effective logging, and improves reliability prediction.
+### Defect Prediction and Analytics
+- **A Survey on Software Defect Prediction using Deep Learning (Akimova et al., 2021)**  
+  Reviews deep learning methods for predicting defect-prone code areas.  
+  [MDPI](https://mdpi.com)
 
-5. **[Artificial Intelligence in Software Testing: A Systematic Review](https://ieeexplore.ieee.org/document/10322349)**
+- **DeepLineDP: Towards a Deep Learning Approach for Line-Level Defect Prediction (Wang et al., 2020)**  
+  Applies CNNs for fine-grained defect prediction at the code line level.  
+  [IEEE Xplore](https://ieeexplore.ieee.org)
 
-Published in: TENCON 2023 - IEEE Region 10 Conference
+- **Just-In-Time Defect Prediction with Bidirectional LSTMs (Hoang et al., 2019)**  
+  Uses deep learning on commit messages and diffs to forecast risky commits.  
+  [ACM ASE](https://dl.acm.org)
 
-Summary: This systematic review analyzes 20 studies on AI's role in software testing, covering areas like test case generation, defect prediction, and prioritization.
+- **Software Defect Prediction: Do Classifiers Matter? (Lessmann et al., 2008)**  
+  A classic study comparing various classifiers for defect prediction.
 
-6. **[AI for Testing Today and Tomorrow: Industry Perspectives](https://ieeexplore.ieee.org/document/8718229)**
-
-Published in: IEEE International Conference on Artificial Intelligence Testing (AITest)
-
-Summary: The paper reviews a panel discussion of industry experts, detailing visions and strategies for applying AI in testing, including testing AI systems and self-testing systems.
-
-
-## Blog Posts
-
-1. **[AI-Powered Test Automation: A Practical Guide for QA Engineers](https://medium.com/better-programming/ai-powered-test-automation-a-practical-guide-for-qa-engineers-7f40ac6c4a67)**
-
-Summary: A comprehensive guide on implementing AI-driven test automation, covering practical aspects like choosing the right tools, setting up test environments, and integrating AI models into existing test frameworks. Includes code examples and real-world case studies.
-
-2. **[Building Self-Healing Test Automation with Machine Learning](https://medium.com/@testim/building-self-healing-test-automation-with-machine-learning-114f5e1e6080)**
-
-Summary: Explores how to create resilient automated tests using ML algorithms that can adapt to UI changes. Details implementation strategies for self-healing mechanisms in test automation frameworks and discusses successful implementations at scale.
-
-3. **[Practical Applications of GPT Models in Software Testing](https://medium.com/towards-artificial-intelligence/practical-applications-of-gpt-models-in-software-testing-b1f887179271)**
-
-Summary: Demonstrates practical ways to leverage GPT models for test case generation, API testing, and test documentation. Includes examples of prompt engineering for testing scenarios and integration patterns with existing test suites.
-
-4. **[Machine Learning for Test Case Prioritization: A Developer's Guide](https://medium.com/microsoftazure/machine-learning-for-test-case-prioritization-a-developers-guide-73f2329f1a54)**
-
-Summary: A detailed walkthrough of implementing ML-based test case prioritization, including feature engineering, model selection, and integration with CI/CD pipelines. Provides code samples and performance metrics from real projects.
-
-5. **[Visual Testing with AI: Beyond Traditional Automation](https://medium.com/@applitools/visual-testing-with-ai-beyond-traditional-automation-f77d8ce3b5f6)**
-
-Summary: Covers advanced techniques in visual regression testing using AI, including handling dynamic content, cross-browser testing, and visual AI algorithms. Discusses practical implementation strategies and common challenges in visual testing.
+- **Bugram: Bug Detection with N-gram Language Models (Kang et al., 2019)**  
+  Utilizes N-gram models to detect anomalous code sequences that may indicate bugs
